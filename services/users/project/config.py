@@ -17,7 +17,6 @@ class BaseConfig:
 class DevelopmentConfig(BaseConfig):
     """Development configuration"""
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
-    MAINFLUX_ADDRESS = os.environ.get('MAINFLUX_BROKER_URL')
     VERIFY_HTTPS = False
     DEBUG_TB_ENABLED = True
     BCRYPT_LOG_ROUNDS = 4
@@ -28,7 +27,6 @@ class TestingConfig(BaseConfig):
     TESTING = True
     VERIFY_HTTPS = os.environ.get('VERIFY_HTTPS')
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_TEST_URL')
-    MAINFLUX_ADDRESS = os.environ.get('MAINFLUX_BROKER_URL')
     VERIFY_HTTPS = False
     BCRYPT_LOG_ROUNDS = 4
     TOKEN_EXPIRATION_DAYS = 0
@@ -38,6 +36,5 @@ class TestingConfig(BaseConfig):
 class ProductionConfig(BaseConfig):
     """Production configuration"""
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
-    MAINFLUX_ADDRESS = os.environ.get('MAINFLUX_BROKER_URL')
     VERIFY_HTTPS = os.environ.get('VERIFY_HTTPS')
     VERIFY_HTTPS = True
