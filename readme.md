@@ -13,7 +13,7 @@ Prerequisites:
   - node
   
 ```sh
-$ git clone https://github.com/SidneyNiccolson/APMainflux.git
+$ git clone https://github.com/SidneyNiccolson/carvexco.git
 ```
 Export React env. variable to point to flask service in the root folder of the project:
 ```sh
