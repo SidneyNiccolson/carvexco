@@ -1,9 +1,5 @@
 version: '3.3'
 
-networks:
-  docker_mainflux-base-net:
-    external: true
-
 services:
 
   users:
@@ -20,12 +16,8 @@ services:
       - DATABASE_URL=postgres://postgres:postgres@users-db:5432/users_dev
       - DATABASE_TEST_URL=postgres://postgres:postgres@users-db:5432/users_test
       - SECRET_KEY=my_precious
-      - MAINFLUX_BROKER_URL=https://172.18.0.1/ # when running locally connect to nginx server on mainflux
-    external_links:
-      - docker_mainflux-base-net
     networks:
       - default
-      - docker_mainflux-base-net # make sure that you are connected to the mainflux network if running on the same host
     depends_on:  # new
       - users-db
   client:
