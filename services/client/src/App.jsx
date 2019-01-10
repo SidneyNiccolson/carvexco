@@ -10,36 +10,48 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      title: <img src={require('./images/image1.png')} />,
+      title: <img src={require('./images/image1.png')} alt={'broken image'} />,
 
     }
   };
 
   componentDidMount() {
   };
+  componentDidUpdate() {
+    setTimeout(() => {
+        window.dispatchEvent(new Event('resize'));
+    }, 0);
+}
+
 
 
   render() {
     return (
       <div>
         <NavBar title={this.state.title} >
-
         </NavBar>
         <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-
-
               <br/>
               <Switch>
                          <Route exact path='/' component={Home}/>
                          <Route exact path='/about' component={About}/>
                          <Route exact path='/products' component={Products}/>
-                         <Route exact path='/contact' component={Contact}/>
+                         <Route exact path='/contact' component={Contact} />
               </Switch>
-            </div>
-          </div>
+
         </div>
+
+<br/><br/>
+<br/><br/>
+<br/><br/>
+
+<footer className="footer" style={{color: 'white'}}>
+<div className="content has-text-centered">
+<p>
+Carvexco by APframeworks 2019
+</p>
+</div>
+</footer>
       </div>
 
 

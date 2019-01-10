@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const NavBar = (props) => (
   // eslint-disable-next-line
   <nav className="navbar" role="navigation" aria-label="main navigation" style={{
-            borderBottom: 'solid 3px #1991B3',
+            borderBottom: 'solid 4px #1991B3',
 }}>
     <section className="container">
       <div className="navbar-brand">
@@ -24,7 +24,7 @@ const NavBar = (props) => (
       <div className="navbar-menu">
         <div className="navbar-start">
           <NavLink to="/" className="navbar-item" style={{
-            borderBottom: 'solid 3px #1991B3',
+            borderBottom: 'solid 1px #1991B3',
 }}>Home</NavLink>
           <NavLink to="/about" className="navbar-item" activeClassName="is-active">About us</NavLink>
           <NavLink to="/products" className="navbar-item" activeClassName="is-active">Product Range</NavLink>

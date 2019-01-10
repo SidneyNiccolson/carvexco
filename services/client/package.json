@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.8.1",
+    "google-maps-react": "^1.1.2",
     "bulma": "^0.7.2",
     "node-sass": "^4.11.0",
+    "nuka-carousel": "^4.4.5",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-router-dom": "^4.3.1",
