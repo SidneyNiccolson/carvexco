@@ -17,12 +17,6 @@ class App extends Component {
 
   componentDidMount() {
   };
-  componentDidUpdate() {
-    setTimeout(() => {
-        window.dispatchEvent(new Event('resize'));
-    }, 0);
-}
-
 
 
   render() {
@@ -41,16 +35,13 @@ class App extends Component {
 
         </div>
 
-<br/><br/>
-<br/><br/>
-<br/><br/>
 
-<footer className="footer" style={{color: 'white'}}>
-<div className="content has-text-centered">
-<p>
-Carvexco by APframeworks 2019
-</p>
-</div>
+        <footer className="footer" >
+  <div className="content has-text-centered">
+    <sub>
+      Carvexco by APframeworks 2019
+    </sub>
+  </div>
 </footer>
       </div>
 

@@ -5,9 +5,7 @@ const Home = () => (
   <div>
 
     <Carousel
-      autoplay={true} speed={0.5}
-      transitionMode='scroll' cellAlign='center' vertical={true}
-      width='100%' wrapAround={true} length={2}>
+      autoplay={true} speed={0.5} wrapAround={true}>
         <img src={require('../images/slide1.jpg')} alt={'broken image'}/>
         <img src={require('../images/slider02.jpg')} alt={'broken image'}/>
 

@@ -31,11 +31,11 @@ Go to http://localhost:81/ to see if React is running correctly.
 
 ### Testing and debugging
 
-(optional) Run unit test:
+(optional) Run unit test [at the moment unused]):
 ```sh
 $ docker-compose -f docker-compose-dev.yml run users python manage.py test
 ```
-(optional run react test):
+(optional run react test [at the moment unused]):
 ```sh
 $ docker-compose -f docker-compose-dev.yml run client npm test
 ```
