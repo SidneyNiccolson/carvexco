@@ -15,7 +15,7 @@ const Contact = () => (
       <CardMedia
         style={{ height: 0, paddingTop: "10%" }}
         title="Carvexco"
-        image={require("../images/caribbean-trading-and-shipping-contact-1024x123.jpg")}
+        image={require("../images/slider02.jpg")}
       />
       <CardContent>
         <Typography color="textSecondary" gutterBottom>

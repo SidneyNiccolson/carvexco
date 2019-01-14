@@ -3,7 +3,7 @@ import Carousel from "nuka-carousel";
 
 const Home = () => (
   <div>
-    <Carousel autoplay={true} speed={0.5} wrapAround={true}>
+    <Carousel autoplay={true} speed={1} wrapAround={true} withoutControls={true}>
       <img src={require("../images/slide1.jpg")} alt={"broken image"} />
       <img src={require("../images/slider02.jpg")} alt={"broken image"} />
     </Carousel>
